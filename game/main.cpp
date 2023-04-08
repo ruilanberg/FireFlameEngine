@@ -1,7 +1,7 @@
-#include <iostream>
+#include <windows.h>
 
-int main(int argc, char* argv[]) {
-	std::cout << "Hello, world!" << std::endl;
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nShowCmd) {
+	MessageBox(NULL, "Hello World!", "Just another Hello World program!", MB_ICONEXCLAMATION | MB_OK);
 
 	return 0;
 }
